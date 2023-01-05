@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:30:43 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 11:32:32 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/05 18:31:09 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,12 @@ typedef struct s_list
 	int				indix;
 
 }	t_list;
+
+typedef struct s_vars
+{
+	char	*p;
+	int		i;
+}	t_vars;
 
 void	sa(t_list **lst, int i);
 void	sb(t_list **lst, int i);

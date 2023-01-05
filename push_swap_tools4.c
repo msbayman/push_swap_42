@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 15:12:15 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 12:10:38 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/05 18:28:37 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,12 +75,7 @@ void	last_free(char **tab, t_list **heada)
 
 	i = 0;
 	while (tab[i])
-	{
 		free(tab[i++]);
-	}
-	free(tab);
 	if (*heada)
-	{
 		ft_lstclear(heada);
-	}
 }
