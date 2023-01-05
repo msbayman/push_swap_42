@@ -6,7 +6,7 @@
 #    By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 12:15:53 by amsaoub           #+#    #+#              #
-#    Updated: 2023/01/05 12:26:41 by amsaoub          ###   ########.fr        #
+#    Updated: 2023/01/05 12:37:58 by amsaoub          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ SRCBONUS = parsing.c \
 		 get_next_line.c \
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra
 FRM = rm -rf
 
 NAME = push_swap
