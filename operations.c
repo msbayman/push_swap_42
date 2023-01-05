@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 12:26:49 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 11:18:01 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/05 13:21:22 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	ss(t_list **lsta, t_list **lstb, int i)
 	int		tempp;
 	t_list	*tt;
 
-	if (lst_size(lsta) < 2 || lst_size(lsta) < 2)
+	if (lst_size(lsta) < 2 || lst_size(lstb) < 2)
 		return ;
 	t = (*lsta);
 	temp = t->data;
