@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 17:21:06 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 11:40:50 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/05 12:36:18 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ins(char *str, t_list **heada, t_list **headb)
 	else if (!ft_strncmp(str, "rrr\n", 4))
 		rrr(heada, headb, 0);
 	else
-		return (write(1, "Error\n", 6), exit(1));
+		return (write(2, "Error\n", 6), exit(1));
 }
 
 int	checkk(t_list **head)
@@ -66,13 +66,13 @@ int	main(int ac, char **av)
 
 	headb = NULL;
 	if (ac == 1)
-		return (write(1, "Error\n", 6));
+		return (0);
 	i = 0;
 	heada = NULL;
 	tab = ft_split(ft_strjoin(ac - 1, av + 1, " "), ' ');
 	if (!check_nul(tab, ac)
 		|| !checkint(tab) || !check_max_min(tab) || !check_duplicates(tab))
-		return (write(1, "Error\n", 6));
+		return (write(2, "Error\n", 6));
 	while (tab[i])
 		ft_lstadd_back(&heada, ft_lstnew(ft_atoi(tab[i++])));
 	str = get_next_line(0);

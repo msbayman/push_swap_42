@@ -6,7 +6,7 @@
 #    By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 12:15:53 by amsaoub           #+#    #+#              #
-#    Updated: 2023/01/05 12:15:17 by amsaoub          ###   ########.fr        #
+#    Updated: 2023/01/05 12:26:41 by amsaoub          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,10 +58,9 @@ $(BNS): $(SRCBONUS) $(HEADER)
 bonus: $(BNS) 
 
 clean:
-	$(FRM) $(NAME)
+	$(FRM) $(NAME) $(BNS)
 
 fclean: clean
-	$(FRM) $(BNS)
 
 re: fclean all
 		
