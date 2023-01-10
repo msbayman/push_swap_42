@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 15:12:15 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 18:28:37 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/10 13:34:36 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,9 @@ void	ft_lstclear(t_list **lst)
 
 void	ps(t_list *heada, t_list *headb, t_list *unq)
 {
+	t_list	*tmp;
+	t_list	*l;
+
 	the_best_head(&heada, &unq);
 	push_a_to_b(&heada, &headb, &unq);
 	while (headb)
@@ -67,6 +70,15 @@ void	ps(t_list *heada, t_list *headb, t_list *unq)
 		final_push(&heada, &headb);
 	}
 	end(&heada);
+	l = heada;
+	while (heada)
+	{
+		tmp = heada;
+		heada = heada->next;
+		free (tmp);
+		if (heada == l)
+			break ;
+	}
 }
 
 void	last_free(char **tab, t_list **heada)
@@ -75,7 +87,12 @@ void	last_free(char **tab, t_list **heada)
 
 	i = 0;
 	while (tab[i])
+	{
 		free(tab[i++]);
+	}
+	free(tab);
 	if (*heada)
+	{
 		ft_lstclear(heada);
+	}
 }
