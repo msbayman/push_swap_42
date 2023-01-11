@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 12:25:50 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 11:16:12 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 11:55:41 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	main(int ac, char **av)
 	t_list	*heada;
 	t_list	*headb;
 	int		i;
-	char	*k;
 
 	headb = NULL;
 	if (ac == 1)
@@ -35,9 +34,7 @@ int	main(int ac, char **av)
 	{
 		i = 0;
 		heada = NULL;
-		k = ft_strjoin(ac - 1, av + 1, " ");
-		tab = ft_split(k, ' ');
-		free(k);
+		tab = ft_split(ft_strjoin(ac - 1, av + 1, " "), ' ');
 		if (!check_nul(tab, ac)
 			|| !checkint(tab) || !check_max_min(tab) || !check_duplicates(tab))
 			return (write(2, "Error\n", 6));

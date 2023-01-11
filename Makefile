@@ -6,7 +6,7 @@
 #    By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 12:15:53 by amsaoub           #+#    #+#              #
-#    Updated: 2023/01/11 11:15:27 by amsaoub          ###   ########.fr        #
+#    Updated: 2023/01/11 12:13:45 by amsaoub          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRC = parsing.c \
 		libf3.c \
 		operations2.c \
 		chyata.c \
+		chyata2.c \
 		push_swap_tools2.c \
 		push_swap_tools3.c \
 		push_swap_tools4.c

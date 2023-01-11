@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 12:51:29 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/04 18:15:03 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 12:12:45 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,17 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	}
 	return (0);
+}
+
+void	ftt_isempty(char *s)
+{
+	while (*s)
+	{
+		if (*s == ' ')
+		{
+			write(2, "Error\n", 6);
+			exit(0);
+		}
+		s++;
+	}
 }
