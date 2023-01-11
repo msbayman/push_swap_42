@@ -6,11 +6,11 @@
 #    By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 12:15:53 by amsaoub           #+#    #+#              #
-#    Updated: 2023/01/10 12:45:30 by amsaoub          ###   ########.fr        #
+#    Updated: 2023/01/11 11:15:27 by amsaoub          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCMAN = parsing.c \
+SRC = parsing.c \
 		push_swap_tools.c \
 		push_swap.c \
 		libf.c \
@@ -23,7 +23,7 @@ SRCMAN = parsing.c \
 		push_swap_tools3.c \
 		push_swap_tools4.c
 
-SRCBONUS = parsing.c \
+SRCB = parsing.c \
 		 push_swap_tools.c \
 		 checker.c \
 		 libf.c \
@@ -39,7 +39,7 @@ SRCBONUS = parsing.c \
 		 get_next_line_utils.c \
 		 get_next_line.c \
 
-CC = cc
+CC = cc 
 CFLAGS = -Wall -Werror -Wextra 
 FRM = rm -rf
 
@@ -49,11 +49,11 @@ HEADER = push_swap.h
 
 all: $(NAME)
 
-$(NAME): $(SRCMAN) $(HEADER)
-	$(CC) $(CFLAGS) $(SRCMAN) -o $(NAME)
+$(NAME): $(SRC) $(HEADER)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 
-$(BNS): $(SRCBONUS) $(HEADER)
-	$(CC) $(CFLAGS) $(SRCBONUS) -o $(BNS)
+$(BNS): $(SRCB) $(HEADER)
+	$(CC) $(CFLAGS) $(SRCB) -o $(BNS)
 
 bonus: $(BNS) 
 
@@ -63,4 +63,4 @@ clean:
 fclean: clean
 
 re: fclean all
-		
+	

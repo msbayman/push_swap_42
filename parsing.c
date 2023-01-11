@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 10:53:32 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 12:32:23 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 11:21:32 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	checkint(char **tab)
 		{
 			if (tab[i][0] == '-' || tab[i][0] == '+')
 				j++;
+			if (tab[i][j] == '\0')
+				return (0);
 			if ((tab[i][j] > '9' || '0' > tab[i][j]) && tab[i][j] != '\0')
 			{
 				return (0);
@@ -93,8 +95,8 @@ int	check_max_min(char	**tab)
 	i = 0;
 	while (tab[i])
 	{
-		if (ft_atoilong(tab[i]) >= 2147483647
-			|| ft_atoilong(tab[i]) <= -2147483648)
+		if (ft_atoilong(tab[i]) > 2147483647
+			|| ft_atoilong(tab[i]) < -2147483648)
 			return (0);
 		i++;
 	}
