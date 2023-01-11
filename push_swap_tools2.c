@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 14:58:48 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/05 11:21:38 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 14:46:19 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void	end(t_list **heada)
 	{
 		min = temp->data;
 		best = temp;
-		end_helper(heada, &best, &min);
+		end_h(heada, &best, &min);
 		k = best->indix;
 		end_rotate(heada, k);
 	}

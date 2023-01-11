@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:08:16 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/02 16:17:05 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 14:36:44 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	the_best_head(t_list **head, t_list **unq)
 	while (1)
 	{
 		temp->sin = 0;
-		the_best_head_helper(temp);
+		the_best_head_h(temp);
 		temp = temp->next;
 		if (temp == *head)
 			break ;
@@ -29,7 +29,7 @@ void	the_best_head(t_list **head, t_list **unq)
 	zero_one(unq);
 }
 
-void	the_best_head_helper(t_list *temp)
+void	the_best_head_h(t_list *temp)
 {
 	t_list	*i;
 	t_list	*j;

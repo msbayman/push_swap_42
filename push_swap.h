@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:30:43 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:41:28 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 14:46:40 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,9 +81,9 @@ void	end(t_list **heada);
 void	indexing(t_list **heada);
 void	push_a_to_b_helper(t_list **heada, int *i);
 int		best_sum_helper(t_list **headb);
-void	the_best_head_helper(t_list *temp);
+void	the_best_head_h(t_list *temp);
 void	end_rotate(t_list **heada, int k);
-void	end_helper(t_list **heada, t_list **best, int *min);
+void	end_h(t_list **heada, t_list **best, int *min);
 void	ft_lstclear(t_list **lst);
 void	ps(t_list *heada, t_list *headb, t_list *unq);
 void	last_free(char **tab, t_list **heada);

@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/02 14:46:15 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 11:11:58 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 14:46:02 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	check_nul(char	**tab, int ac)
 	return (1);
 }
 
-void	end_helper(t_list **heada, t_list **best, int *min)
+void	end_h(t_list **heada, t_list **best, int *min)
 {
 	t_list	*temp;
 
