@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:30:43 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 14:46:40 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:14:42 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,6 @@ char	*ft_substr(char *s, unsigned int start, size_t len);
 char	*get_next_line(int fd);
 void	*ft_memcpy(void *dst, void *src, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-int		checkk(t_list **head);
-void	check_output(t_list **heada);
+int		checkk(t_list **head, t_list **headb);
+void	check_output(t_list **head, t_list **headb);
 #endif

@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 17:21:06 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:20:28 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:27:55 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,14 @@ void	ins(char *str, t_list **heada, t_list **headb)
 		return (write(2, "Error\n", 6), exit(1));
 }
 
-int	checkk(t_list **head)
+int	checkk(t_list **head, t_list **headb)
 {
 	t_list	*temp;
 
 	temp = *head;
 	while (1)
 	{
-		if (temp->data > temp->next->data)
+		if (temp->data > temp->next->data || *headb)
 			return (0);
 		temp = temp->next;
 		if (temp->next == *head)
@@ -82,13 +82,18 @@ int	main(int ac, char **av)
 		free(str);
 		str = get_next_line(0);
 	}
-	check_output(&heada);
+	check_output(&heada, &headb);
 }
 
-void	check_output(t_list **heada)
+void	check_output(t_list **heada, t_list **headb)
 {
-	if (checkk(heada))
-		write(1, "ok\n", 3);
+	if(*heada == NULL)
+	{
+		write(1, "KO\n", 3);
+		exit(1);
+	}
+	if (checkk(heada, headb))
+		write(1, "OK\n", 3);
 	else
-		write(1, "ko\n", 3);
+		write(1, "KO\n", 3);
 }

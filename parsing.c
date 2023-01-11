@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 10:53:32 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:29:48 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:08:43 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	checkint(char **tab)
 		j = 0;
 		if (tab[i][j] == '-' || tab[i][j] == '+')
 			j++;
+		if (tab[i][j] == '\0')
+			return (0);
 		while (tab[i][j] != '\0')
 		{
-			if (tab[i][j] == '\0')
-				return (0);
 			if ((tab[i][j] > '9' || '0' > tab[i][j]) && tab[i][j] != '\0')
 			{
 				return (0);

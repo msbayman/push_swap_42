@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 14:38:09 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:36:51 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:06:11 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	**ft_split(char *s, char c)
 	wc = word_count(s, c);
 	arr = malloc(sizeof(char *) * (wc + 1));
 	if (!arr)
-		return (NULL);
+		er();
 	while (i < wc)
 	{
 	arr[i] = get_word(s, &index, c);
