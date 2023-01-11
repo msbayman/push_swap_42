@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 12:51:29 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:12:45 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 12:41:51 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,10 @@ void	ftt_isempty(char *s)
 		}
 		s++;
 	}
+}
+
+void	er(void)
+{
+	write(2, "Error\n", 6);
+	exit(1);
 }

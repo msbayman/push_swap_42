@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:30:43 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:11:20 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 12:41:28 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ char	*get_word(const char *s1, int *index, char c);
 char	**ft_split(char *s, char c);
 int		checkint(char	**tab);
 int		abs(int a);
+void	er(void);
 int		sup(int k, int b);
 int		lst_size(t_list **head);
 int		ft_atoi(char *str);

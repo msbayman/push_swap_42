@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 06:02:35 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:10:58 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 12:40:52 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*get_str(int size, char **strs, char *sep)
 	sep_l = ft_strlen(sep) * (size - 1);
 	str = malloc(sizeof(char) * (str_l + sep_l + 1));
 	if (!str)
-		return (NULL);
+		er();
 	return (str);
 }
 

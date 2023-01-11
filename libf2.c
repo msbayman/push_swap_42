@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 06:01:22 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/02 15:42:53 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 12:40:15 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ t_list	*ft_lstnew(int k)
 
 	p = malloc(sizeof(t_list));
 	if (!p)
-		return (NULL);
+		er();
 	p->data = k;
 	p->next = p;
 	p->prev = p;
