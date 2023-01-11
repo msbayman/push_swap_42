@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 17:21:06 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 15:27:55 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:35:39 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ int	main(int ac, char **av)
 
 void	check_output(t_list **heada, t_list **headb)
 {
-	if(*heada == NULL)
+	if (*heada == NULL)
 	{
 		write(1, "KO\n", 3);
 		exit(1);

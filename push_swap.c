@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 12:25:50 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 15:02:03 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:35:14 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	x(t_list **heada, t_list **headb)
 
 int	main(int ac, char **av)
 {
-	
 	char	**tab;
 	t_list	*heada;
 	t_list	*headb;
