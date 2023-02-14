@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:30:43 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 15:14:42 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/01/14 18:26:33 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,5 @@ void	*ft_memcpy(void *dst, void *src, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		checkk(t_list **head, t_list **headb);
 void	check_output(t_list **head, t_list **headb);
+void	check_spaces(char **av);
 #endif

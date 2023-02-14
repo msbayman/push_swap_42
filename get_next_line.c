@@ -6,11 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 17:05:58 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/03 17:15:55 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/02/14 12:39:47 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"push_swap.h"
+# include"push_swap.h"
 
 char	*linee(char *cont)
 {

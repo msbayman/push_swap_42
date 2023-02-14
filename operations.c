@@ -6,11 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 12:26:49 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/10 12:34:29 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/02/14 12:39:47 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"push_swap.h"
+# include"push_swap.h"
 
 void	sa(t_list **lst, int i)
 {

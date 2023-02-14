@@ -6,11 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 12:08:16 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 14:36:44 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/02/14 12:39:47 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"push_swap.h"
+# include"push_swap.h"
 
 void	the_best_head(t_list **head, t_list **unq)
 {

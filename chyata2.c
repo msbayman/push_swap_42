@@ -6,11 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 12:51:29 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:41:51 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/02/14 12:39:47 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"push_swap.h"
+# include"push_swap.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -45,4 +45,28 @@ void	er(void)
 {
 	write(2, "Error\n", 6);
 	exit(1);
+}
+
+void	check_spaces(char **av)
+{
+	int	i;
+	int	j;
+	int	k;
+
+	i = 0;
+	j = 0;
+	k = 0;
+	while (av[i])
+	{
+		k = 0;
+		j = 0;
+		while (av[i][j] == ' ')
+		{
+			j++;
+			k++;
+		}
+		if (ft_strlen(av[i]) == j)
+			er();
+		i++;
+	}	
 }

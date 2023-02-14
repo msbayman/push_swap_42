@@ -6,11 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/01 06:02:35 by amsaoub           #+#    #+#             */
-/*   Updated: 2023/01/11 12:40:52 by amsaoub          ###   ########.fr       */
+/*   Updated: 2023/02/14 12:39:47 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"push_swap.h"
+# include"push_swap.h"
 
 char	*ft_strcat(char *dest, char *src)
 {
@@ -66,13 +66,13 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		i;
 	char	*str;
 
+	check_spaces(strs);
 	str = get_str(size, strs, sep);
 	i = -1;
 	k = 0;
 	while (++i < size)
 	{
 		j = 0;
-		ftt_isempty(strs[i]);
 		while (strs[i][j])
 		{
 			str[k++] = strs[i][j];
